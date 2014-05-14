@@ -207,8 +207,8 @@ function ToggleWaterwalk(value)
 end
 
 function ToggleAccountlock(value)
-  MangAdmin:ChatMsg(".account lock "..value)
-  MangAdmin:LogAction("Turned GM account lock to "..value..".")
+  MangAdmin:ChatMsg(".account lock ip "..value)
+  MangAdmin:LogAction("Turned GM account ip lock to "..value..".")
 end
 
 function GMInGame()
@@ -240,7 +240,7 @@ end
 
 function PetTP()
   local param = ma_parameter:GetText()
-  MangAdmin:ChatMsg(".modify talentpoint "..param)
+  MangAdmin:ChatMsg(".pet tp "..param)
   MangAdmin:LogAction("Modified pet training points by "..param)
 end
 
