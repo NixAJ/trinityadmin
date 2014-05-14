@@ -228,9 +228,9 @@ function Modify(case, value)
     elseif case == "mana" then
       MangAdmin:ChatMsg(".modify mana "..value)
       MangAdmin:LogAction("Modified mana for "..player.." to "..value.." mana")
-    elseif case == "aspeed" then
-      MangAdmin:ChatMsg(".modify aspeed "..value)
-      MangAdmin:LogAction("Modified AllSpeeds for "..player.." to "..value.." mana")
+    elseif case == "speed" then
+      MangAdmin:ChatMsg(".modify speed "..value)
+      MangAdmin:LogAction("Modified Speed for "..player.." to "..value.." mana")
     elseif case == "arena" then
       MangAdmin:ChatMsg(".modify arena "..value)
       MangAdmin:LogAction("Modified Arena Points for "..player.." to "..value.." mana")
@@ -240,18 +240,18 @@ function Modify(case, value)
     elseif case == "drunk" then
       MangAdmin:ChatMsg(".modify drunk "..value)
       MangAdmin:LogAction("Modified Drunk for "..player.." to "..value.." mana")
-    elseif case == "fly" then
-      MangAdmin:ChatMsg(".modify fly "..value)
-      MangAdmin:LogAction("Modified FlySpeed for "..player.." to "..value.." mana")
+--    elseif case == "fly" then
+--      MangAdmin:ChatMsg(".modify fly "..value)
+--      MangAdmin:LogAction("Modified FlySpeed for "..player.." to "..value.." mana")
     elseif case == "gender" then
       MangAdmin:ChatMsg(".modify gender "..value)
       MangAdmin:LogAction("Modified Gender for "..player.." to "..value.." mana")
     elseif case == "honor" then
       MangAdmin:ChatMsg(".modify honor "..value)
       MangAdmin:LogAction("Modified Honor for "..player.." to "..value.." mana")
-    elseif case == "mount" then
-      MangAdmin:ChatMsg(".modify mount "..value)
-      MangAdmin:LogAction("Modified MountSpeed for "..player.." to "..value.." mana")
+--    elseif case == "mount" then
+--      MangAdmin:ChatMsg(".modify mount "..value)
+--      MangAdmin:LogAction("Modified MountSpeed for "..player.." to "..value.." mana")
     elseif case == "phase" then
       MangAdmin:ChatMsg(".modify phase "..value)
       MangAdmin:LogAction("Modified Phase for "..player.." to "..value.." mana")
@@ -264,9 +264,9 @@ function Modify(case, value)
     elseif case == "standstate" then
       MangAdmin:ChatMsg(".modify standstate "..value)
       MangAdmin:LogAction("Modified StandState for "..player.." to "..value.." mana")
-    elseif case == "swim" then
-      MangAdmin:ChatMsg(".modify swim "..value)
-      MangAdmin:LogAction("Modified SwimSpeed for "..player.." to "..value.." mana")
+--    elseif case == "swim" then
+--      MangAdmin:ChatMsg(".modify swim "..value)
+--      MangAdmin:LogAction("Modified SwimSpeed for "..player.." to "..value.." mana")
     elseif case == "tp" then
       MangAdmin:ChatMsg(".modify tp "..value)
       MangAdmin:LogAction("Modified TalentPoints for "..player.." to "..value.." mana")
@@ -324,12 +324,12 @@ function ModifyDropDownInitialize()
     local level = 1
     local info = UIDropDownMenu_CreateInfo()
     local buttons = {
-      {Locale["ma_AllSpeeds"],"aspeed"},
+      {Locale["ma_Speed"],"speed"},
       {Locale["ma_Arena"],"arena"},
       {Locale["ma_BackWalk"],"bwalk"},
       {Locale["ma_Drunk"],"drunk"},
       {Locale["ma_Energy"],"energy"},
-      {Locale["ma_FlySpeed"],"fly"},
+--      {Locale["ma_FlySpeed"],"fly"},
       {Locale["ma_Gender"],"gender"},
       {Locale["ma_Healthpoints"],"health"},
       {Locale["ma_Honor"],"honor"},
@@ -337,13 +337,13 @@ function ModifyDropDownInitialize()
       {Locale["ma_LevelDown"],"leveldown"},
       {Locale["ma_Mana"],"mana"},
       {Locale["ma_Money"],"money"},
-      {Locale["ma_MountSpeed"],"mount"},
+--      {Locale["ma_MountSpeed"],"mount"},
       {Locale["ma_Phase"],"phase"},
       {Locale["ma_Rage"],"rage"},
       {Locale["ma_RunicPower"],"runicpower"},
-      {Locale["ma_Speed"],"speed"},
+      --     {Locale["ma_Speed"],"speed"},
       {Locale["ma_StandSate"],"standstate"},
-      {Locale["ma_SwimSpeed"],"swim"},
+--      {Locale["ma_SwimSpeed"],"swim"},
       {Locale["ma_TalentPoints"],"tp"}
     }
     for k,v in pairs(buttons) do
