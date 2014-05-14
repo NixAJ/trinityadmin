@@ -52,7 +52,7 @@ end
 function GroupGoButton()
   local cname = ma_charactertarget:GetText()
   local npccname = ma_npccharactertarget:GetText()
-  MangAdmin:ChatMsg(".groupsummon "..cname)
+  MangAdmin:ChatMsg(".group summon "..cname)
   MangAdmin:LogAction("Teleported "..cname.." and his/her group TO me.")
 
 end
@@ -140,8 +140,8 @@ end
 function CharMorphButton()
   local cname = ma_charactertarget:GetText()
   local npccname = ma_npccharactertarget:GetText()
-  MangAdmin:ChatMsg(".modify morph "..cname)
-  MangAdmin:LogAction(".modify morph "..cname..".")
+  MangAdmin:ChatMsg(".morph "..cname)
+  MangAdmin:LogAction(".morph "..cname..".")
 
 end
 
