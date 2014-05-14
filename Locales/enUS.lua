@@ -228,8 +228,8 @@ function Return_enUS()
     ["ma_charrepair"] = "Repair",
     
   --[[Other]]
-    ["ma_LevelUp"] = "Level up",
-    ["ma_LevelDown"] = "Level down",
+    ["ma_LevelUp"] = "Set Level",
+    ["ma_LevelDown"] = "To Be Removed ( Duplicate Set Level )",
     ["ma_Money"] = "Money",
     ["ma_Energy"] = "Energy",
     ["ma_Rage"] = "Rage",

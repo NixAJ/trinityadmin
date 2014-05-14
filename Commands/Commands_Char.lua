@@ -178,16 +178,16 @@ function LearnSpell(value, state)
         MangAdmin:ChatMsg(command.." all")
         MangAdmin:LogAction(logcmd.." all spells to "..player..".")
       elseif value == "all_crafts" then
-        MangAdmin:ChatMsg(command.." all_crafts")
+        MangAdmin:ChatMsg(command.." all crafts")
         MangAdmin:LogAction(logcmd.." all professions and recipes to "..player..".")
       elseif value == "all_gm" then
-        MangAdmin:ChatMsg(command.." all_gm")
+        MangAdmin:ChatMsg(command.." all gm")
         MangAdmin:LogAction(logcmd.." all default spells for Game Masters to "..player..".")
       elseif value == "all_lang" then
-        MangAdmin:ChatMsg(command.." all_lang")
+        MangAdmin:ChatMsg(command.." all lang")
         MangAdmin:LogAction(logcmd.." all languages to "..player..".")
       elseif value == "all_myclass" then
-        MangAdmin:ChatMsg(command.." all_myclass")
+        MangAdmin:ChatMsg(command.." all myclass")
         MangAdmin:LogAction(logcmd.." all spells available to the "..class.."-class to "..player..".")
       else
         MangAdmin:ChatMsg(command.." "..value)
