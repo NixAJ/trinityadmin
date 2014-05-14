@@ -240,7 +240,7 @@ end
 
 function PetTP()
   local param = ma_parameter:GetText()
-  MangAdmin:ChatMsg(".pet tp "..param)
+  MangAdmin:ChatMsg(".modify talentpoint "..param)
   MangAdmin:LogAction("Modified pet training points by "..param)
 end
 
