@@ -211,7 +211,7 @@ function Modify(case, value)
       MangAdmin:ChatMsg(".modify money "..value)
       MangAdmin:LogAction("Give player "..player.." "..value.." copper).")
     elseif case == "levelup" then
-      MangAdmin:ChatMsg(".levelup "..value)
+      MangAdmin:ChatMsg(".char level "..value)
       MangAdmin:LogAction("Leveled up player "..player.." by "..value.." levels.")
     elseif case == "leveldown" then
       MangAdmin:ChatMsg(".levelup "..value*(-1))
@@ -268,7 +268,7 @@ function Modify(case, value)
 --      MangAdmin:ChatMsg(".modify swim "..value)
 --      MangAdmin:LogAction("Modified SwimSpeed for "..player.." to "..value.." mana")
     elseif case == "tp" then
-      MangAdmin:ChatMsg(".modify tp "..value)
+      MangAdmin:ChatMsg(".modify talentpoint "..value)
       MangAdmin:LogAction("Modified TalentPoints for "..player.." to "..value.." mana")
     end
   else
