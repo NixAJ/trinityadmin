@@ -1,5 +1,16 @@
 TrinityAdmin v2 Changelog
 
+-=[ Revision 2 - 5/14/2014]=-
+-- Updated ingame major and minor versions to display TrinityAdmin V.2, and rev 2. 
+-- Changed name of instant kill button. 
+-- Fixed the position of some buttons. 
+-- Fixed GPS navigator E & W.
+-- Fixed account lock. 
+-- Fixed modify pet talent points.
+-- Removing "level down" command at a later point.
+-- Updated changelog.txt
+
+
 -=[ Revision 1 - 5/14/2014]=-
 - Fixed the following buttons / sub-menus.
 -- Fixed modify speed.
