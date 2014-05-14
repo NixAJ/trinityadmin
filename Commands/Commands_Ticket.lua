@@ -129,6 +129,7 @@ function Ticket(value)
     wipe(MangAdmin.db.account.buffer.tickets)
     MangAdmin.db.account.buffer.tickets={}
     MangAdmin:ChatMsg(".ticket delete"..ma_ticketid:GetText())
+    MangAdmin:LogAction("Deleted ticket with number: "..ma_ticketid:GetText())
     ShowTicketTab()
     ResetTickets()
     --InlineScrollUpdate()
