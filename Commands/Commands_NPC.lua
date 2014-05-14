@@ -137,8 +137,8 @@ end
 function NPCMorph()
   local cname = ma_charactertarget:GetText()
   local npccname = ma_npccharactertarget:GetText()
-  MangAdmin:ChatMsg(".modify morph "..npccname)
-  MangAdmin:LogAction(".modify morph "..npccname..".")
+  MangAdmin:ChatMsg(".morph "..npccname)
+  MangAdmin:LogAction(".morph "..npccname..".")
 end
 
 function NPCSay()
