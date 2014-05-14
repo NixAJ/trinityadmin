@@ -135,7 +135,7 @@ function Return_enUS()
     ["ma_TaxiOnButton"] = "Taxicheat on",    
     ["ma_ShowMapsButton"] = "Show Maps",
     ["ma_HideMapsButton"] = "Hide Maps",
-    ["ma_instakill"] = "Instantly kill enemy creatures",
+    ["ma_instakill"] = "Kills Selected Enemies",
     ["ma_ScreenshotButton"] = "Screenshot",
     ["ma_BankButton"] = "Bank",
     ["ma_DismountButton"] = "Dismount",
