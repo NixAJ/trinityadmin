@@ -366,7 +366,7 @@ function ResetDropDownInitialize()
       {Locale["ma_resetallspells"],"all spells"},
       {Locale["ma_resetalltalents"],"all talents"},
       {Locale["ma_achievements"],"achievements"},
-      {Locale["ma_Honor"],"honor"},
+      {Locale["ma_RHonor"],"honor"},
       {Locale["ma_Level"],"level"},
       {Locale["ma_Spells"],"spells"},
       {Locale["ma_Stats"],"stats"},
