@@ -684,7 +684,7 @@ function MangAdmin:CreateMainSection()
     },
     setpoint = {
       pos = "TOPLEFT",
-      offX = 676,
+      offX = 720,
       offY = -200
     },
     text = Locale["E"]
@@ -704,7 +704,7 @@ function MangAdmin:CreateMainSection()
     },
     setpoint = {
       pos = "TOPLEFT",
-      offX = 720,
+      offX = 676,
       offY = -200
     },
     text = Locale["W"]
