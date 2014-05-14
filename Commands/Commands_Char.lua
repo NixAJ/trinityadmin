@@ -145,7 +145,7 @@ function Demorph()
 end
 
 function ToggleMapsChar(value)
-  MangAdmin:ChatMsg(".explorecheat "..value)
+  MangAdmin:ChatMsg(".cheat explore "..value)
   if value == 1 then
     MangAdmin:LogAction("Revealed all maps for selected player.")
   else
