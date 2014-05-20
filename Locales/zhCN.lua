@@ -151,8 +151,6 @@ function Return_zhCN()
     ["ma_WeatherRain"] = "雨",
     ["ma_WeatherSnow"] = "雪",
     ["ma_WeatherSand"] = "沙尘",
-    ["ma_LevelUp"] = "升级",
-    ["ma_LevelDown"] = "降级",
     ["ma_Money"] = "金钱",
     ["ma_Energy"] = "能量",
     ["ma_Rage"] = "怒气",

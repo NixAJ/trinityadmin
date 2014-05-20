@@ -156,8 +156,6 @@ function Return_deDE()
     ["ma_Modify"] = "modifizieren",
     ["ma_Reset"] = "Reset",
   --[[Other]]
-      ["ma_LevelUp"] = "Level hoch",
-    ["ma_LevelDown"] = "Level runter",
     ["ma_Money"] = "Geld",
     ["ma_Energy"] = "Energie",
     ["ma_Rage"] = "Wut",

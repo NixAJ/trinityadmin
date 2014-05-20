@@ -25,7 +25,7 @@ function ToggleGMMode(value)
   MangAdmin:ChatMsg(".gm "..value)
   MangAdmin:LogAction("Turned GM-mode to "..value..".")
   MangAdmin:ChatMsg(".gm chat "..value)
-  Manadmin:LogAction("Turned Gm-Chat to "..value..".")
+  MangAdmin:LogAction("Turned Gm-Chat to "..value..".")
 end
 
 function ToggleFlyMode(value)
@@ -38,16 +38,17 @@ function ToggleFlyMode(value)
   end]]
 end
 
--- function ToggleHoverMode(value)
---  MangAdmin:ChatMsg(".hover "..value)
---  local status
---  if value == 1 then
---    status = "on"
---  else
---    status = "off"
---  end
---  MangAdmin:LogAction("Turned Hover-mode "..status..".")
--- end
+function ToggleHoverMode(value)
+    local status
+    if value == 1 then
+        MangAdmin:ChatMsg(".aura "..50195)
+        status = "on"
+    else
+        MangAdmin:ChatMsg(".unaura "..50195)
+        status = "off"
+    end
+    MangAdmin:LogAction("Turned Hover-mode "..status..".")
+end
 
 function ToggleWhisper(value)
   MangAdmin:ChatMsg(".whispers "..value)
@@ -145,22 +146,12 @@ end
 
 function SetJail_A()
     MangAdmin:ChatMsg(".tele del ma_AllianceJail")
-    local i = 1
-    while i<100 do
-        i=i+1
-        MangAdmin:ChatMsg(".")
-    end
     MangAdmin:ChatMsg(".tele add ma_AllianceJail")
     MangAdmin:LogAction("Set location of Alliance Jail")
 end
 
 function SetJail_H()
     MangAdmin:ChatMsg(".tele del ma_HordeJail")
-    local i = 1
-    while i<100 do
-        i=i+1
-        MangAdmin:ChatMsg(".")
-    end
     MangAdmin:ChatMsg(".tele add ma_HordeJail")
     MangAdmin:LogAction("Set location of Horde Jail")
 end
