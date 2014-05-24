@@ -151,8 +151,6 @@ function Return_esES()
     ["ma_WeatherRain"] = "Lluvia",
     ["ma_WeatherSnow"] = "Nieve",
     ["ma_WeatherSand"] = "Sand",
-    ["ma_LevelUp"] = "Subir nivel",
-    ["ma_LevelDown"] = "Bajar nivel",
     ["ma_Money"] = "Dinero",
     ["ma_Energy"] = "Energy",
     ["ma_Rage"] = "Ira",

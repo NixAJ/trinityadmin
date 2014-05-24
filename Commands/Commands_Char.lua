@@ -210,66 +210,60 @@ function Modify(case, value)
     if case == "money" then
       MangAdmin:ChatMsg(".modify money "..value)
       MangAdmin:LogAction("Give player "..player.." "..value.." copper).")
-    elseif case == "levelup" then
+    elseif case == "level" then
       MangAdmin:ChatMsg(".char level "..value)
-      MangAdmin:LogAction("Leveled up player "..player.." by "..value.." levels.")
-    elseif case == "leveldown" then
-      MangAdmin:ChatMsg(".levelup "..value*(-1))
-      MangAdmin:LogAction("Leveled down player "..player.." by "..value.." levels.")
+      MangAdmin:LogAction("Leveled player "..player.." to "..value)
     elseif case == "energy" then
       MangAdmin:ChatMsg(".modify energy "..value)
-      MangAdmin:LogAction("Modified energy for "..player.." to "..value.." energy.")
+      MangAdmin:LogAction("Modified energy for "..player.." to "..value)
     elseif case == "rage" then
       MangAdmin:ChatMsg(".modify rage "..value)
-      MangAdmin:LogAction("Modified rage for "..player.." to "..value.." rage.")
+      MangAdmin:LogAction("Modified rage for "..player.." to "..value)
     elseif case == "health" then
       MangAdmin:ChatMsg(".modify hp "..value)
-      MangAdmin:LogAction("Modified hp for "..player.." to "..value.." healthpoints")
+      MangAdmin:LogAction("Modified hp for "..player.." to "..value)
     elseif case == "mana" then
       MangAdmin:ChatMsg(".modify mana "..value)
-      MangAdmin:LogAction("Modified mana for "..player.." to "..value.." mana")
+      MangAdmin:LogAction("Modified mana for "..player.." to "..value)
     elseif case == "speed" then
       MangAdmin:ChatMsg(".modify speed "..value)
-      MangAdmin:LogAction("Modified Speed for "..player.." to "..value.." mana")
+      MangAdmin:LogAction("Modified Speed for "..player.." to "..value)
     elseif case == "arena" then
       MangAdmin:ChatMsg(".modify arena "..value)
-      MangAdmin:LogAction("Modified Arena Points for "..player.." to "..value.." mana")
+      MangAdmin:LogAction("Modified Arena Points for "..player.." to "..value)
     elseif case == "bwalk" then
-      MangAdmin:ChatMsg(".modify bwalk "..value)
-      MangAdmin:LogAction("Modified BackWalk for "..player.." to "..value.." mana")
+      MangAdmin:ChatMsg(".modify speed backwalk "..value)
+      MangAdmin:LogAction("Modified BackWalk for "..player.." to "..value)
     elseif case == "drunk" then
       MangAdmin:ChatMsg(".modify drunk "..value)
-      MangAdmin:LogAction("Modified Drunk for "..player.." to "..value.." mana")
---    elseif case == "fly" then
---      MangAdmin:ChatMsg(".modify fly "..value)
---      MangAdmin:LogAction("Modified FlySpeed for "..player.." to "..value.." mana")
+      MangAdmin:LogAction("Modified Drunk for "..player.." to "..value)
+    elseif case == "fly" then
+      MangAdmin:ChatMsg(".modify speed fly "..value)
+      MangAdmin:LogAction("Modified FlySpeed for "..player.." to "..value)
     elseif case == "gender" then
       MangAdmin:ChatMsg(".modify gender "..value)
-      MangAdmin:LogAction("Modified Gender for "..player.." to "..value.." mana")
+      MangAdmin:LogAction("Modified Gender for "..player.." to "..value)
     elseif case == "honor" then
       MangAdmin:ChatMsg(".modify honor "..value)
-      MangAdmin:LogAction("Modified Honor for "..player.." to "..value.." mana")
+      MangAdmin:LogAction("Modified Honor for "..player.." to "..value)
 --    elseif case == "mount" then
 --      MangAdmin:ChatMsg(".modify mount "..value)
---      MangAdmin:LogAction("Modified MountSpeed for "..player.." to "..value.." mana")
+--      MangAdmin:LogAction("Modified MountSpeed for "..player.." to "..value)
     elseif case == "phase" then
       MangAdmin:ChatMsg(".modify phase "..value)
-      MangAdmin:LogAction("Modified Phase for "..player.." to "..value.." mana")
+      MangAdmin:LogAction("Modified Phase for "..player.." to "..value)
     elseif case == "runicpower" then
       MangAdmin:ChatMsg(".modify runicpower "..value)
-      MangAdmin:LogAction("Modified RunicPower for "..player.." to "..value.." mana")
-    elseif case == "speed" then
-      MangAdmin:ChatMsg(".modify speed "..value)
-      MangAdmin:LogAction("Modified Speed for "..player.." to "..value.." mana")
+      MangAdmin:LogAction("Modified RunicPower for "..player.." to "..value)
     elseif case == "standstate" then
       MangAdmin:ChatMsg(".modify standstate "..value)
-      MangAdmin:LogAction("Modified StandState for "..player.." to "..value.." mana")
---    elseif case == "swim" then
---      MangAdmin:ChatMsg(".modify swim "..value)
---      MangAdmin:LogAction("Modified SwimSpeed for "..player.." to "..value.." mana")
+      MangAdmin:LogAction("Modified StandState for "..player.." to "..value)
+    elseif case == "swim" then
+      MangAdmin:ChatMsg(".modify speed swim "..value)
+      MangAdmin:LogAction("Modified SwimSpeed for "..player.." to "..value)
     elseif case == "tp" then
       MangAdmin:ChatMsg(".modify talentpoint "..value)
-      MangAdmin:LogAction("Modified TalentPoints for "..player.." to "..value.." mana")
+      MangAdmin:LogAction("Modified TalentPoints for "..player.." to "..value)
     end
   else
     MangAdmin:Print(Locale["selectionerror1"])
@@ -329,21 +323,19 @@ function ModifyDropDownInitialize()
       {Locale["ma_BackWalk"],"bwalk"},
       {Locale["ma_Drunk"],"drunk"},
       {Locale["ma_Energy"],"energy"},
---      {Locale["ma_FlySpeed"],"fly"},
+      {Locale["ma_FlySpeed"],"fly"},
       {Locale["ma_Gender"],"gender"},
       {Locale["ma_Healthpoints"],"health"},
       {Locale["ma_Honor"],"honor"},
-      {Locale["ma_LevelUp"],"levelup"},
-      {Locale["ma_LevelDown"],"leveldown"},
+      {Locale["ma_Level"],"level"},
       {Locale["ma_Mana"],"mana"},
       {Locale["ma_Money"],"money"},
 --      {Locale["ma_MountSpeed"],"mount"},
       {Locale["ma_Phase"],"phase"},
       {Locale["ma_Rage"],"rage"},
       {Locale["ma_RunicPower"],"runicpower"},
-      --     {Locale["ma_Speed"],"speed"},
       {Locale["ma_StandSate"],"standstate"},
---      {Locale["ma_SwimSpeed"],"swim"},
+      {Locale["ma_SwimSpeed"],"swim"},
       {Locale["ma_TalentPoints"],"tp"}
     }
     for k,v in pairs(buttons) do
@@ -355,7 +347,7 @@ function ModifyDropDownInitialize()
       info.keepShownOnClick = nil
       UIDropDownMenu_AddButton(info, level)
     end
-    UIDropDownMenu_SetSelectedValue(ma_modifydropdown, "levelup")
+    UIDropDownMenu_SetSelectedValue(ma_modifydropdown, "level")
 end  
 
   -- RESET
@@ -401,37 +393,37 @@ function CharModelZoomOut()
 end
 
 function CharBindSight()
-    local cname = ma_charactertarget:GetText()
+    local cname = UnitName("target") or UnitName("player")
     MangAdmin:ChatMsg(".bindsight")
     MangAdmin:LogAction("Sight bound to "..cname)
 end
 
 function CharUnBindSight()
-    local cname = ma_charactertarget:GetText()
+    local cname = UnitName("target") or UnitName("player")
     MangAdmin:ChatMsg(".unbindsight")
     MangAdmin:LogAction("Sight unbound to "..cname)
 end
 
 function CharRename() 
-    local cname = ma_charactertarget:GetText()
-    MangAdmin:ChatMsg(".character rename")
+    local cname = UnitName("target") or UnitName("player")
+    MangAdmin:ChatMsg(".character rename "..cname)
     MangAdmin:LogAction("Forced rename of "..cname)
 end
 
 function CharCustomize()
-    local cname = ma_charactertarget:GetText()
+    local cname = UnitName("target") or UnitName("player")
     MangAdmin:ChatMsg(".character customize")
     MangAdmin:LogAction("Forced customization of "..cname)
 end
 
 function CharChangeRace()
-    local cname = ma_charactertarget:GetText()
+    local cname = UnitName("target") or UnitName("player")
     MangAdmin:ChatMsg(".character changerace")
     MangAdmin:LogAction("Forced race change of "..cname)
 end
 
 function CharChangeFaction()
-    local cname = ma_charactertarget:GetText()
+    local cname = UnitName("target") or UnitName("player")
     MangAdmin:ChatMsg(".character changefaction")
     MangAdmin:LogAction("Forced faction change of "..cname)
 end

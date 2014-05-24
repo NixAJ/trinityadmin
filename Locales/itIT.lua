@@ -151,8 +151,6 @@ function Return_itIT()
     ["ma_WeatherRain"] = "Rain",
     ["ma_WeatherSnow"] = "Snow",
     ["ma_WeatherSand"] = "Sand",
-    ["ma_LevelUp"] = "Level up",
-    ["ma_LevelDown"] = "Level down",
     ["ma_Money"] = "Money",
     ["ma_Energy"] = "Energy",
     ["ma_Rage"] = "Rage",

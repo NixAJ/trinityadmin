@@ -151,8 +151,6 @@ function Return_ruRU()
     ["ma_WeatherRain"] = "Дождь",
     ["ma_WeatherSnow"] = "Снег",
     ["ma_WeatherSand"] = "Печаная",
-    ["ma_LevelUp"] = "Поднять уровень",
-    ["ma_LevelDown"] = "Опустить уровень",
     ["ma_Money"] = "Деньги",
     ["ma_Energy"] = "Энергия",
     ["ma_Rage"] = "Ярость",

@@ -152,8 +152,6 @@ function Return_svSV()
     ["ma_Modify"] = "Ändra",
     ["ma_Reset"] = "Återställ",
   --[[Other]]
-    ["ma_LevelUp"] = "Level upp",
-    ["ma_LevelDown"] = "Level ner",
     ["ma_Money"] = "Pengar",
     ["ma_Energy"] = "Energi",
     ["ma_Rage"] = "Rage",
