@@ -9,6 +9,7 @@ Shocker (various)
 
 TrinityAdmin V2 also contains code donated by:
 Lightning Blade (various)
+Rochet2 (Fixed and updated some parts of the add-on)
 
 TrinityAdmin Developers:
 iotech, Ravenheart, Gimp, Dracula70, MrLakeC, Namida, Amok, Lyrr123, borgotech, Morpheux, Georgios, Kitharo
