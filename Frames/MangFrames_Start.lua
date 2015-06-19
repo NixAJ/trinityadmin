@@ -248,6 +248,18 @@ function MangAdmin:CreateStartFrames()
     }
   })
   
+    FrameLib:BuildFontString({
+    name = "ma_inforevisiontext",
+    group = "bg",
+    parent = ma_rightframe,
+    text = "Addon Managed By: Ghostcrawler336",
+    setpoint = {
+      pos = "TOPLEFT",
+      offX = 10,
+      offY = -70
+    }
+  })
+  
 --  FrameLib:BuildFontString({
 --    name = "ma_infoplatformtext",
 --    group = "bg",
