@@ -25,7 +25,7 @@ function ToggleGMMode(value)
   MangAdmin:ChatMsg(".gm "..value)
   MangAdmin:LogAction("Turned GM-mode to "..value..".")
   MangAdmin:ChatMsg(".gm chat "..value)
-  Manadmin:LogAction("Turned Gm-Chat to "..value..".")
+  MangAdmin:LogAction("Turned Gm-Chat to "..value..".")
 end
 
 function ToggleFlyMode(value)
@@ -39,14 +39,15 @@ function ToggleFlyMode(value)
 end
 
 function ToggleHoverMode(value)
-  MangAdmin:ChatMsg(".hover "..value)
-  local status
-  if value == 1 then
-    status = "on"
-  else
-    status = "off"
-  end
-  MangAdmin:LogAction("Turned Hover-mode "..status..".")
+    local status
+    if value == 1 then
+        MangAdmin:ChatMsg(".aura "..50195)
+        status = "on"
+    else
+        MangAdmin:ChatMsg(".unaura "..50195)
+        status = "off"
+    end
+    MangAdmin:LogAction("Turned Hover-mode "..status..".")
 end
 
 function ToggleWhisper(value)
@@ -66,11 +67,11 @@ end
 function ToggleTaxicheat(value)
   if MangAdmin:Selection("player") or MangAdmin:Selection("self") or MangAdmin:Selection("none") then
     local player = UnitName("target") or UnitName("player")
-    MangAdmin:ChatMsg(".taxicheat "..value)
+    MangAdmin:ChatMsg(".cheat taxi "..value)
     if value == 1 then
-      MangAdmin:LogAction("Activated taxicheat to "..player..".")
+      MangAdmin:LogAction("Activated cheat taxi to "..player..".")
     else
-      MangAdmin:LogAction("Disabled taxicheat to "..player..".")
+      MangAdmin:LogAction("Disabled cheat Taxi to "..player..".")
     end
   else
     MangAdmin:Print(Locale["selectionerror1"])
@@ -78,7 +79,7 @@ function ToggleTaxicheat(value)
 end
 
 function ToggleMaps(value)
-  MangAdmin:ChatMsg(".explorecheat "..value)
+  MangAdmin:ChatMsg(".cheat explore "..value)
   if value == 1 then
     MangAdmin:LogAction("Revealed all maps for selected player.")
   else
@@ -145,22 +146,12 @@ end
 
 function SetJail_A()
     MangAdmin:ChatMsg(".tele del ma_AllianceJail")
-    local i = 1
-    while i<100 do
-        i=i+1
-        MangAdmin:ChatMsg(".")
-    end
     MangAdmin:ChatMsg(".tele add ma_AllianceJail")
     MangAdmin:LogAction("Set location of Alliance Jail")
 end
 
 function SetJail_H()
     MangAdmin:ChatMsg(".tele del ma_HordeJail")
-    local i = 1
-    while i<100 do
-        i=i+1
-        MangAdmin:ChatMsg(".")
-    end
     MangAdmin:ChatMsg(".tele add ma_HordeJail")
     MangAdmin:LogAction("Set location of Horde Jail")
 end
@@ -202,13 +193,13 @@ function ToggleChat(value)
 end
 
 function ToggleWaterwalk(value)
-  MangAdmin:ChatMsg(".waterwalk "..value)
+  MangAdmin:ChatMsg(".cheat waterwalk "..value)
   MangAdmin:LogAction("Turned Waterwalk to "..value..".")
 end
 
 function ToggleAccountlock(value)
-  MangAdmin:ChatMsg(".account lock "..value)
-  MangAdmin:LogAction("Turned GM account lock to "..value..".")
+  MangAdmin:ChatMsg(".account lock ip "..value)
+  MangAdmin:LogAction("Turned GM account ip lock to "..value..".")
 end
 
 function GMInGame()
@@ -240,7 +231,7 @@ end
 
 function PetTP()
   local param = ma_parameter:GetText()
-  MangAdmin:ChatMsg(".pet tp "..param)
+  MangAdmin:ChatMsg(".modify talentpoint "..param)
   MangAdmin:LogAction("Modified pet training points by "..param)
 end
 

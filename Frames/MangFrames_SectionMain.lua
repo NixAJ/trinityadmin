@@ -349,7 +349,7 @@ function MangAdmin:CreateMainSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 10,
-      offY = -190
+      offY = -170
     },
     text = Locale["ma_waterwalkbutton"]
   })
@@ -369,7 +369,7 @@ function MangAdmin:CreateMainSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 134,
-      offY = -190
+      offY = -170
     },
     text = Locale["ma_OffButton"]
   })  
@@ -389,7 +389,7 @@ function MangAdmin:CreateMainSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 10,
-      offY = -210
+      offY = -190
     },
     text = Locale["ma_accountlockbutton"]
   })
@@ -409,7 +409,7 @@ function MangAdmin:CreateMainSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 134,
-      offY = -210
+      offY = -190
     },
     text = Locale["ma_OffButton"]
   })    
@@ -514,15 +514,15 @@ function MangAdmin:CreateMainSection()
     text = Locale["ma_SetJail_H_Button"]
   })
   
-  FrameLib:BuildButton({
+    FrameLib:BuildButton({
     type = "CheckButton",
     name = "ma_instantkillbutton",
     group = "main",
     parent = ma_midframe,
     setpoint = {
       pos = "TOPLEFT",
-      offX = 180,
-      offY = -10
+      offX = 8,
+      offY = -210
     },
     text = Locale["ma_instakill"],
     inherits = "OptionsCheckButtonTemplate"
@@ -539,7 +539,7 @@ function MangAdmin:CreateMainSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 180,
-      offY = -50
+      offY = -10
     },
     inherits = "OptionsSliderTemplate"
   })
@@ -559,7 +559,7 @@ function MangAdmin:CreateMainSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 265,
-      offY = -50
+      offY = -10
     },
     text = "R"
   })
@@ -575,7 +575,7 @@ function MangAdmin:CreateMainSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 180,
-      offY = -85
+      offY = -55
     },
     inherits = "OptionsSliderTemplate"
   })
@@ -595,7 +595,7 @@ function MangAdmin:CreateMainSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 265,
-      offY = -85
+      offY = -55
     },
     text = "R"
   })
@@ -684,7 +684,7 @@ function MangAdmin:CreateMainSection()
     },
     setpoint = {
       pos = "TOPLEFT",
-      offX = 676,
+      offX = 720,
       offY = -200
     },
     text = Locale["E"]
@@ -704,7 +704,7 @@ function MangAdmin:CreateMainSection()
     },
     setpoint = {
       pos = "TOPLEFT",
-      offX = 720,
+      offX = 676,
       offY = -200
     },
     text = Locale["W"]

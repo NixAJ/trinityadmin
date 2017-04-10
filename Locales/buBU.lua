@@ -151,8 +151,6 @@ function Return_buBU()
     ["ma_WeatherRain"] = "Regen",
     ["ma_WeatherSnow"] = "Sneeuw",
     ["ma_WeatherSand"] = "Zand",
-    ["ma_LevelUp"] = "Level omhoog",
-    ["ma_LevelDown"] = "Level omlaag",
     ["ma_Money"] = "Geld",
     ["ma_Energy"] = "Energie",
     ["ma_Rage"] = "Woede",

@@ -176,6 +176,9 @@ function FrameLib:BuildFrame(def)
     frame:ClearFocus()
     --frame:SetScript("OnEnter", function() frame:SetFocus() end)
     --frame:SetScript("OnLeave", function() frame:ClearFocus() end)
+    -- Clears focus on enter and esc press
+    frame:SetScript("OnEnterPressed", frame.ClearFocus)
+    frame:SetScript("OnEscapePressed", frame.ClearFocus)
     frame:SetFontObject(def.fontObj or "ChatFontNormal")
     if def.multiline then frame:SetMultiLine(def.multiline) end
     if def.maxletters then frame:SetMaxLetters(def.maxletters) end

@@ -156,8 +156,6 @@ function Return_frFR()
     ["ma_Modify"] = "Modifier",
     ["ma_Reset"] = "Reset",
   --[[Other]]
-    ["ma_LevelUp"] = "Monter de niveau",
-    ["ma_LevelDown"] = "Baisser de niveau",
     ["ma_Money"] = "Monaie",
     ["ma_Energy"] = "Energie",
     ["ma_Rage"] = "Rage",

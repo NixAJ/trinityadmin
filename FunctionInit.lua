@@ -91,7 +91,7 @@ function InitControls()
 
   -- Speed Slider
   ma_speedslider:SetOrientation("HORIZONTAL")
-  ma_speedslider:SetMinMaxValues(.5, 30)
+  ma_speedslider:SetMinMaxValues(.5, 50)
   ma_speedslider:SetValueStep(0.5)
   ma_speedslider:SetValue(1)
   ma_speedsliderText:SetText("Speed: 1.0")

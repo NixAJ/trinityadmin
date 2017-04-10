@@ -1,4 +1,4 @@
-﻿-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 --
 -- TrinityAdmin Version 3.x
 -- TrinityAdmin is a derivative of MangAdmin.
@@ -199,10 +199,10 @@ function MangLinkifier_SetItemRef(link, text, button)
     SendChatMessage(".reload creature_template "..strsub(link, 16), say, nil, nil)
     return;
   elseif ( strsub(link, 1, 10) == "npcdisplay" ) then
-    SendChatMessage(".modify morph "..strsub(link, 12), say, nil, nil)
+    SendChatMessage(".morph "..strsub(link, 12), say, nil, nil)
     return;
   elseif ( strsub(link, 1, 11) == "npcdisplay2" ) then
-    SendChatMessage(".modify morph "..strsub(link, 13), say, nil, nil)
+    SendChatMessage(".morph "..strsub(link, 13), say, nil, nil)
     return;
   ----------====~~ ADD GO Command Functions ~~====----------
   elseif ( strsub(link, 1, 11) == "addgoguidgo" ) then
